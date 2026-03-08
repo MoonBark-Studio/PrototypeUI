@@ -1,4 +1,4 @@
-# PrototypeUI Plugin
+﻿# PrototypeUI Plugin
 
 A reusable Godot C# plugin for prototype HUDs and lightweight presentation scaffolding.
 
@@ -26,15 +26,17 @@ Use a game project for:
 - text generation from game state
 - lore, faction, item, or rules-specific UI content
 
+Full composed HUD roots should remain game-owned unless multiple projects converge on the same root layout and snapshot contract.
+
 ## Architecture
 
 ```text
 PrototypeUI/
-├── Core/                      # Godot-independent UI contracts
-├── UI/                        # Godot controls and reusable scenes
-├── PrototypeUI.Godot.csproj   # Godot-facing assembly
-├── PrototypeUIPlugin.cs       # Godot addon entrypoint
-└── plugin.cfg                 # Godot addon metadata
+|-- Core/                      # Godot-independent UI contracts
+|-- UI/                        # Godot controls and reusable scenes
+|-- PrototypeUI.Godot.csproj   # Godot-facing assembly
+|-- PrototypeUIPlugin.cs       # Godot addon entrypoint
+`-- plugin.cfg                 # Godot addon metadata
 ```
 
 ### Core
@@ -47,7 +49,9 @@ The core project defines generic data contracts:
 
 ### Godot addon
 
-The Godot-facing layer provides reusable controls and scenes directly from the addon root:
+The Godot-facing layer provides reusable controls and scenes directly from the addon root.
+
+This Godot layer is intentionally limited to reusable control primitives, not full game-composed HUD roots.
 
 - `HudSectionCard`
 - `HudListView`
@@ -55,7 +59,18 @@ The Godot-facing layer provides reusable controls and scenes directly from the a
 - `PrototypeHotbarButtonView`
 - `CooldownOverlayView`
 
+See `docs/VIEW_BOUNDARY.md` for the current extraction boundary.
+
+## Tests
+
+Plugin-owned Godot integration tests live under `Tests/` in this repository.
+
+Because GoDotTest requires a real Godot project context, these tests are intended to be compiled and executed by a consuming Godot host project after the addon is mounted at `res://addons/PrototypeUI`.
+
+The Thistletide host test project is the current execution path for this suite.
+
 ## Current Status
 
 Initial scaffold, now laid out so projects can consume it directly as `res://addons/PrototypeUI`.
 
+Current architectural decision: keep reusable Godot controls in the plugin, keep full composed views at the game level for now.
