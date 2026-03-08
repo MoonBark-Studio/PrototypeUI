@@ -1,0 +1,8 @@
+bin/
+obj/
+.godot/
+.mono/
+.import/
+.vs/
+*.user
+*.suo

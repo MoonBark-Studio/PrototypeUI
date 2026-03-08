@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/PrototypeUI/UI/PrototypeHotbarButtonView.cs" id="1_script"]
+
+[node name="PrototypeHotbarButtonView" type="Button"]
+custom_minimum_size = Vector2(82, 82)
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+text = ""
+alignment = 0
+clip_text = false
+script = ExtResource("1_script")
+
+[node name="Binding" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_right = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+text = "[1]"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 12
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 20.0
+offset_right = -10.0
+offset_bottom = -40.0
+custom_minimum_size = Vector2(24, 24)
+expand_mode = 1
+stretch_mode = 5
+visible = false
+
+[node name="IconLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 20.0
+offset_right = -10.0
+offset_bottom = -40.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "*"
+theme_override_font_sizes/font_size = 24
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_right = 1.0
+offset_left = 4.0
+offset_top = 50.0
+offset_right = -4.0
+offset_bottom = 70.0
+text = "Action"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 14
+
+[node name="Detail" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_right = 1.0
+offset_left = 4.0
+offset_top = 68.0
+offset_right = -4.0
+offset_bottom = 82.0
+text = "Ready"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 12

@@ -1,0 +1,37 @@
+<Project Sdk="Godot.NET.Sdk/4.6.1">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <UseExportedPluginDlls>false</UseExportedPluginDlls>
+    <AssemblyName>PrototypeUI.Godot</AssemblyName>
+    <RootNamespace>PrototypeUI.Godot</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin/**" />
+    <Compile Remove="obj/**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="PrototypeUIPlugin.cs" />
+    <Compile Include="UI/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bin/**" />
+    <None Remove="obj/**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Core\PrototypeUI.Core.csproj" />
+  </ItemGroup>
+
+</Project>
