@@ -1,8 +1,8 @@
 using Godot;
-using PrototypeUI.Core;
+using MoonBark.PrototypeUI.Core;
 using System.Linq;
 
-namespace PrototypeUI.Godot.UI;
+namespace MoonBark.PrototypeUI.Godot.UI;
 
 public partial class PrototypeHotbarButtonView : Button
 {

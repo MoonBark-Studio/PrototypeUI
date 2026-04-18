@@ -2,9 +2,9 @@ using Chickensoft.GoDotTest;
 using Godot;
 using Shouldly;
 using System.Linq;
-using PrototypeUI.Godot.UI;
+using MoonBark.PrototypeUI.Godot.UI;
 
-namespace PrototypeUI.Godot.Tests;
+namespace MoonBark.PrototypeUI.Godot.Tests;
 
 public partial class CooldownOverlayViewTests : TestClass
 {

@@ -2,7 +2,7 @@ using Godot;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PrototypeUI.Godot.UI;
+namespace MoonBark.PrototypeUI.Godot.UI;
 
 public partial class HudListView : VBoxContainer
 {

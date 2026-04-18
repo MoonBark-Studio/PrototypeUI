@@ -1,6 +1,6 @@
 using Godot;
 
-namespace PrototypeUI.Godot.UI;
+namespace MoonBark.PrototypeUI.Godot.UI;
 
 public partial class HudSectionCard : PanelContainer
 {

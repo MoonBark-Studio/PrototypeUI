@@ -1,4 +1,4 @@
-namespace PrototypeUI.Core;
+namespace MoonBark.PrototypeUI.Core;
 
 public enum PrototypeHotbarSlotKind
 {
