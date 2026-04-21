@@ -1,4 +1,4 @@
-namespace PrototypeUI.Core;
+namespace MoonBark.PrototypeUI.Core;
 
 public sealed record PrototypeHotbarSlot(
     int SlotIndex,

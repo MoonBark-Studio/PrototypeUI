@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace PrototypeUI.Godot.UI;
+namespace MoonBark.PrototypeUI.Godot.UI;
 
 public partial class HudStatMeter : HBoxContainer
 {
