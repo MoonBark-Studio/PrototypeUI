@@ -20,3 +20,7 @@ obj/
 .vs/
 *.user
 *.suo
+
+# Godot artifacts (added by workspace audit)
+.git/
+.vscode/
