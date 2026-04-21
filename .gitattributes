@@ -1,0 +1,32 @@
+# Normalize line endings to LF on checkout, prevent CRLF in working directory
+* text=auto
+
+# Keep these as binary (no conversion)
+*.png binary
+*.jpg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+*.res binary
+*.gdshader binary
+*.gdns binary
+*.gdnlib binary
+
+# Explicitly set text files for the Godot/C# project
+*.cs text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.gd text eol=lf
+*.shader text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+*.md text eol=lf
+*.cfg text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
