@@ -1,51 +1,20 @@
-# PrototypeUI — Health
+# PrototypeUI — ﻿# PrototypeUI Plugin
 
-## Health Score: 78/100 ✅
-**Status:** ✅ **OK** (Anti-pattern audit complete 2026-04-14)
+## Status: Active
 
----
+## Last Audited: 2026-04-21
 
-## Anti-Pattern Audit Findings
+## Discovered Issues
+(none yet)
 
-### ⚠️ MEDIUM Severity — 1 Issue
+## Metrics
+- **Lines of C# production code**: 639 (from `cloc --include-lang=C# --quiet Core/ src/`)
+- **Test coverage**: unknown
+- **.csproj count**: 3
+- **Last commit**: 1388ec1 — PrototypeUI: update project files (2026-04-21 16:40:16 -0400)
 
-| Severity | File | Line | Issue |
-|----------|------|------|-------|
-| MEDIUM | `Core/IPrototypeHotbarActionSink.cs` | 3 | INTERFACE BLOAT — single implementation `PrototypeHotbarButtonView`, not a test mock |
+## Architecture
+Brief description of the architecture.
 
-### Note
-This interface may be justified as a sink pattern for action handling. Evaluate if direct injection would suffice.
-
----
-
-## Build & Tests
-
-| Check | Status | Notes |
-|-------|--------|-------|
-| Build | ✅ PASS | Clean |
-| Tests | ✅ 5 files | Require host Godot project to execute |
-
----
-
-## Known Issues
-
-| Severity | Issue | Status |
-|----------|-------|--------|
-| MEDIUM | No standalone test runner — needs consuming Godot host | Open |
-| MEDIUM | Interface bloat (IPrototypeHotbarActionSink) | Evaluate |
-
----
-
-## Tech Debt
-
-| Item | Priority | Status |
-|------|----------|--------|
-| Evaluate IPrototypeHotbarActionSink justification | P2 | Pending |
-
----
-
-## Structure
-
-Core/ — HUD scaffolding: card containers, text lists, stat meters, hotbar buttons
-Godot/ — Godot UI components
-Tests/ — 5 test files (need host project)
+## Dependencies
+- (none)
