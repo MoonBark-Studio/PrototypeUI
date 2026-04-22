@@ -25,15 +25,18 @@ export_presets.cfg
 # Build
 bin/
 obj/
+artifacts/
 *.dll
 *.pdb
 *.exe
 
 # .NET / NuGet
-*.csproj
-*.sln
 *.pck
 *.res
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+*.snupkg
 
 # IDE
 .vs/
@@ -43,5 +46,13 @@ obj/
 *.suo
 
 # OS
+.DS_Store
+Thumbs.db
 
 # Temp
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+mono_crash.*
