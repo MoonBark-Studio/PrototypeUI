@@ -1,11 +1,10 @@
-using Godot;
+﻿using Godot;
 
 namespace MoonBark.PrototypeUI.Godot.UI;
 
 public partial class CooldownOverlayView : Control
 {
-    private static class CooldownOverlayConstants
-    {
+    private static readonly class CooldownOverlayConstants
         public static readonly Color OverlayColor = new(0, 0, 0, 0.7f);
         public const int OverlayZIndex = 10;
         public const int LabelZIndex = 11;

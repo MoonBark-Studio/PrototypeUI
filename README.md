@@ -1,4 +1,21 @@
-﻿##### Status
+﻿######## Status
+- ✅ Audited: 2026-05-05
+- Changed files this run: 22
+- File count: 22 C# files (~1282 lines)
+
+# ECS Architecture (v2)
+- ECS subdirectories: none
+- ECS files outside subdirectories: 0
+- Flat structure: Core/, ECS/, Godot/ (cs/ prefix not required)
+
+# Namespaces
+- `MoonBark.PrototypeUI.Core`
+- `MoonBark.PrototypeUI.Godot`
+- `MoonBark.PrototypeUI.Godot.Tests`
+- `MoonBark.PrototypeUI.Godot.UI`
+- `MoonBark.PrototypeUI.Tests`
+
+# Status
 - ✅ Audited: 2026-04-30
 - Changed files this run: 0
 - File count: 22 C# files (~1282 lines)
@@ -16,15 +33,9 @@
 - `MoonBark.PrototypeUI.Tests`
 
 # Key Types
+## Key Types
 ## Key Types (22 files, ~1282 lines)
 CooldownOverlayConstants, CooldownOverlayView, CooldownOverlayViewTests, Hotbar, HotbarButtonView, HotbarButtonViewTests, HotbarSlot, HotbarSlotData, HotbarSlotKind, HotbarTests, HotbarView, HudListView, HudListViewTests, HudSectionCard, HudSectionCardTests, HudStatMeter, HudStatMeterTests, IHotbarActionSink, MockEffectDefinition, MockInputEvent
-
-# PrototypeUI Plugin
-
-A reusable Godot C# plugin for prototype HUDs and lightweight presentation scaffolding.
-
-PrototypeUI exists for the common UI layer that shows up across gameplay prototypes before a project commits to a fully custom UI stack.
-
 ## Features
 
 - reusable HUD card container

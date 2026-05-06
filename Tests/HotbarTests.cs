@@ -1,4 +1,4 @@
-namespace MoonBark.PrototypeUI.Tests;
+﻿namespace MoonBark.PrototypeUI.Tests;
 
 using Xunit;
 using MoonBark.PrototypeUI.Core;

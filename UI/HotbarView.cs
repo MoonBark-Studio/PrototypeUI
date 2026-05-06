@@ -1,4 +1,4 @@
-namespace MoonBark.PrototypeUI.Godot.UI;
+﻿namespace MoonBark.PrototypeUI.Godot.UI;
 
 using Godot;
 using MoonBark.PrototypeUI.Core;
